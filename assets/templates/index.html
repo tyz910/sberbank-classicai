@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sberbank КлассикAI 2018</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?classicai" >
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}?classicai"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <form id="qa">
+                <h3>Sberbank КлассикAI 2018</h3>
+                <h4>Cоревнование по стихотворному Искусственному Интеллекту.</h4>
+
+                <fieldset>
+                    <input id="question" placeholder="Введите тему...." type="text" required autofocus value="Регрессия глубокими нейронными сетями">
+                </fieldset>
+
+                <fieldset>
+                    <select id="poet">
+                        <option value="pushkin">Пушкин, Александр Сергеевич</option>
+                        <option value="esenin">Есенин, Сергей Александрович</option>
+                        <option value="blok">Блок, Александр Александрович</option>
+                        <option value="tyutchev">Тютчев, Фёдор Иванович</option>
+                        <option value="mayakovskij">Маяковский, Владимир Владимирович</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <button name="submit" type="submit" id="send">Сочинить стихотворение</button>
+                </fieldset>
+
+                <p id="answer">....</p>
+            </form>
+        </div>
+    </body>
+</html>

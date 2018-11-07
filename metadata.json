@@ -1,0 +1,4 @@
+{
+	"image": "tyz910/sb-poet",
+	"entry_point": "python -W ignore server.py"
+}
