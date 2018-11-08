@@ -2,7 +2,7 @@ $(function () {
     var answer = $("#answer");
     answer.hide();
 
-    $("#send").click(function () {
+    function updateAnswer () {
         answer.text("....").show();
 
         $.ajax({
@@ -15,11 +15,18 @@ $(function () {
         }).done(function (data) {
             answer.html(data.poem.replace(/\n/g,"<br>"));
         });
+    }
 
+    $("#send").click(function () {
+        updateAnswer();
         return false;
     });
 
-    $('#paragraph, #question').bind('input propertychange', function() {
+    $('#question').bind('input propertychange', function() {
         answer.text("....").hide();
+    });
+
+    $('#poet').bind('input propertychange', function() {
+        updateAnswer();
     });
 });

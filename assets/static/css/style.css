@@ -28,31 +28,31 @@ body {
   position: relative;
 }
 
-#qa input[type="text"],
-#qa input[type="email"],
-#qa input[type="tel"],
-#qa input[type="url"],
-#qa textarea,
-#qa button[type="submit"],
-#qa select {
+#classicai input[type="text"],
+#classicai input[type="email"],
+#classicai input[type="tel"],
+#classicai input[type="url"],
+#classicai textarea,
+#classicai button[type="submit"],
+#classicai select {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
-#qa {
+#classicai {
   background: #F9F9F9;
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-#qa h3 {
+#classicai h3 {
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-#qa h4 {
+#classicai h4 {
   margin: 5px 0 15px;
   display: block;
   font-size: 13px;
@@ -67,14 +67,14 @@ fieldset {
   width: 100%;
 }
 
-#qa select {
+#classicai select {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
 }
 
-#qa input[type="text"],
-#qa textarea {
+#classicai input[type="text"],
+#classicai textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
@@ -82,24 +82,24 @@ fieldset {
   padding: 10px;
 }
 
-#qa input[type="text"]:hover,
-#qa input[type="email"]:hover,
-#qa input[type="tel"]:hover,
-#qa input[type="url"]:hover,
-#qa textarea:hover {
+#classicai input[type="text"]:hover,
+#classicai input[type="email"]:hover,
+#classicai input[type="tel"]:hover,
+#classicai input[type="url"]:hover,
+#classicai textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#qa textarea {
+#classicai textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-#qa button[type="submit"] {
+#classicai button[type="submit"] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -110,14 +110,14 @@ fieldset {
   font-size: 15px;
 }
 
-#qa button[type="submit"]:hover {
+#classicai button[type="submit"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#qa button[type="submit"]:active {
+#classicai button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -126,8 +126,8 @@ fieldset {
     text-align: center;
 }
 
-#qa input:focus,
-#qa textarea:focus {
+#classicai input:focus,
+#classicai textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
