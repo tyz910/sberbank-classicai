@@ -89,7 +89,10 @@ class Poet:
         cache = set()
 
         seed_vec = self.tokenizer.get_tokens_vec(seed_tokens)
-        for line, sim in self.poet_lines_vec.most_similar_cosmul(positive=[seed_vec], topn=5000):
+        for line, sim in self.poet_lines_vec.most_similar_cosmul(positive=[seed_vec], topn=1000):
+            if "плев_о_чки" in line:
+                continue
+
             if exclude_lines is not None:
                 if line in exclude_lines:
                     continue
@@ -127,6 +130,8 @@ class Poet:
                 if l[0]["last_token"].is_phonetic_match(l[1]["last_token"]):
                     score = (l[0]["sim"] + l[1]["sim"]) / 2
                     score += 0.05 * (l[0]["style"] + l[1]["style"]) / 2
+                    if (len(l[0]["last_token"].phoneme) + len(l[1]["last_token"].phoneme)) / 2 >= 3:
+                        score += 0.1
 
                     lines.append({
                         "lines": l,

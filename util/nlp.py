@@ -106,6 +106,7 @@ class TokenForms:
     def __repr__(self) -> str:
         return list(self.forms.keys()).__repr__()
 
+
 class Tokenizer:
     def __init__(self, wv: str="/data/ruwikiruscorpora_upos_skipgram_300_2_2018.vec.gz"):
         self.mystem = Mystem()
